@@ -1,11 +1,22 @@
+//Import fonts:
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+//default fonts:
+$default-font: 'Roboto', sans-serif;
+
 //color palette:
 $deep-purple-900: #311b92;
 $orange-500: #ff9800;
+$indigo-400:#5c6bc0;
+$indigo-700:#303f9f;
+$indigo-800:#283593;
 $white: #FFFFFF;
 
 
 //Coloring:
-$background: $deep-purple-900;
+$background: $indigo-700;
+$background-buttons: $indigo-800;
+$background-buttons-hover: $indigo-400;
 $background-search: $white;
 
 $primary-color: $orange-500;

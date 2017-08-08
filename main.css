@@ -2,6 +2,22 @@
 ======================================*/
 /* Base variables, with mixin and placeholders.
 ===============================================*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.search .searchField, .search .btn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  border: #ff9800 solid 3px;
+  background-color: #283593;
+  color: #ff9800;
+  font-weight: lighter;
+  font-size: 120%;
+  line-height: 110%;
+  padding: 5px 20px;
+  margin-left: 10px;
+  margin-top: 5px; }
+
 /* Framework - Structure and layout files.
 ===============================================*/
 body, div, p {
@@ -14,20 +30,20 @@ span {
   flex-direction: row; }
 
 body {
-  background-color: #311b92;
+  background-color: #303f9f;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Roboto", sans-serif; }
 
-.search input {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  background-color: inherit;
-  border: #ff9800 solid 3px;
-  color: #ff9800;
-  font-weight: bold;
-  padding: 5px 20px; }
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 15px; }
+  .search .btn:hover {
+    cursor: pointer;
+    background-color: #5c6bc0; }
 
 .searchResult {
   width: 80vw; }

@@ -13,19 +13,26 @@ body{
   background-color: $background;
   align-items: center;
   justify-content: center;
+
+  font-family: $default-font;
 }
 
 .search{
-  input{
-    @include border-radius(20px);
-    background-color: inherit;
-    border:$primary-color solid 3px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+  margin-top: 15px;
+  .searchField{
+    @extend %search-style;
+  }
+  .btn{
+    @extend %search-style;
+  }
 
-    color: $primary-color;
-    font-weight: bold;
-
-    padding: 5px 20px;
-
+  .btn:hover{
+    cursor: pointer;
+    background-color: $background-buttons-hover;
   }
 }
 
