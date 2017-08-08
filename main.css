@@ -1,0 +1,50 @@
+/* Vendor, default fallback.
+======================================*/
+/* Base variables, with mixin and placeholders.
+===============================================*/
+/* Framework - Structure and layout files.
+===============================================*/
+body, div, p {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+span {
+  display: inline-flex;
+  flex-direction: row; }
+
+body {
+  background-color: #311b92;
+  align-items: center;
+  justify-content: center; }
+
+.search input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: inherit;
+  border: #ff9800 solid 3px;
+  color: #ff9800;
+  font-weight: bold;
+  padding: 5px 20px; }
+
+.searchResult {
+  width: 80vw; }
+  .searchResult article {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    margin-left: 4px;
+    padding: 5px 5px 5px 25px; }
+  .searchResult article:hover {
+    border-left: #ff9800 solid 4px;
+    margin-left: 0px; }
+
+/* Modules, re-usable site elements.
+===============================================*/
+
+/*# sourceMappingURL=main.css.map */
