@@ -37,6 +37,8 @@ body{
 }
 
 .searchResult{
+  a{text-decoration: none;
+    color:#000;}
   width: 80vw;
   article{
     @include border-radius(3px);
