@@ -25,7 +25,7 @@ body, div, p {
   flex-direction: column;
   box-sizing: border-box; }
 
-span {
+span, form {
   display: inline-flex;
   flex-direction: row; }
 
@@ -41,6 +41,10 @@ body {
   flex-wrap: wrap;
   margin-bottom: 20px;
   margin-top: 15px; }
+  .search a {
+    text-decoration: none; }
+  .search .btn {
+    font-family: "Roboto", sans-serif; }
   .search .btn:hover {
     cursor: pointer;
     background-color: #5c6bc0; }
@@ -62,6 +66,12 @@ body {
   .searchResult article:hover {
     border-left: #ff9800 solid 4px;
     margin-left: 0px; }
+
+.error {
+  margin-top: 30px;
+  color: #ff9800;
+  font-size: 180%;
+  text-align: center; }
 
 /* Modules, re-usable site elements.
 ===============================================*/

@@ -4,7 +4,7 @@ body, div, p {
   box-sizing: border-box;
 }
 
-span{
+span,form{
   display: inline-flex;
   flex-direction: row;
 }
@@ -26,8 +26,13 @@ body{
   .searchField{
     @extend %search-style;
   }
+
+  a{
+    text-decoration: none;
+  }
   .btn{
     @extend %search-style;
+    font-family:$default-font;
   }
 
   .btn:hover{
@@ -37,8 +42,11 @@ body{
 }
 
 .searchResult{
-  a{text-decoration: none;
-    color:#000;}
+  a{
+    text-decoration: none;
+    color:#000;
+  }
+
   width: 80vw;
   article{
     @include border-radius(3px);
@@ -52,6 +60,11 @@ body{
     border-left: $primary-color solid 4px;
     margin-left: 0px;
   }
+}
 
-
+.error{
+  margin-top: 30px;
+  color: $primary-color;
+  font-size: 180%;
+  text-align: center;
 }
